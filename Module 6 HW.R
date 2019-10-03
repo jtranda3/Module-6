@@ -40,7 +40,7 @@ NC_Updated %>%
   geom_point() +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 90)) + 
-  facet_grid(measurement ~ ag_district)
+  facet_grid(measurement ~ ag_district, scales = "free_y")
 
 # 5. Summarize data from 2018 ----
 NC_Updated
